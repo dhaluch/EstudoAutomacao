@@ -9,6 +9,8 @@ import org.junit.rules.TestName;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
+
+
 import br.com.daniel.core.BasePage;
 import br.com.daniel.core.DriverFactory;
 
@@ -18,8 +20,9 @@ public class AbasPage extends BasePage {
 
 	public void clickAba1() {
 		clicarPorTexto("ABA 1");
+		
 	}
-
+    
 	public boolean isAba1() {
 		return existeElementoPorTexto("Este é o conteúdo da Aba 1");
 	}

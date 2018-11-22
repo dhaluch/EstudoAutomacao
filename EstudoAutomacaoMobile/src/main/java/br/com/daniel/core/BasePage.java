@@ -15,6 +15,7 @@ public class BasePage {
 	// Set
 	public void escrever(By by, String texto) {
 		getDriver().findElement(by).sendKeys(texto);
+		
 	}
 
 	 public String obterTexto(By by) {

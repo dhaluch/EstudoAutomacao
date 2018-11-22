@@ -3,6 +3,8 @@ package br.com.daniel.test;
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.relevantcodes.extentreports.ExtentTest;
+
 import br.com.daniel.core.BaseTest;
 import br.com.daniel.page.AcordionPage;
 import br.com.daniel.page.Menupage;
@@ -16,6 +18,7 @@ public class AcordionTest extends BaseTest {
 		menu.acordion();
 		//clicar em opção 1
 		acordion.clicarOpcao1();
+		
 		//verifica mensagem da opção 1
 		Assert.assertTrue(acordion.verificaMensagemopcao1());
 		//clicar em opção em 2
