@@ -21,6 +21,7 @@ public class BaseTest {
 	public TestName testName = new TestName();
 	
 	@BeforeClass
+	
 	public static void statusReport(String name){
 		report = new ExtentReports(System.getProperty("user.dir")+"\\ExtetnReportResults.html");
 		test = report.startTest(name);

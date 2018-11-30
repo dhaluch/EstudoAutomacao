@@ -13,13 +13,24 @@ import io.appium.java_client.MobileElement;
 public class BasePage {
 	// private DSL dsl = new DSL();
 	// Set
+
 	public void escrever(By by, String texto) {
-		getDriver().findElement(by).sendKeys(texto);
-		
+		try {
+			getDriver().findElement(by).sendKeys(texto);
+		} catch (Exception e) {
+
+		}
+
 	}
 
-	 public String obterTexto(By by) {
-		return getDriver().findElement(by).getText();
+	public String obterTexto(By by) {
+		String texto = null;
+		try{
+		  texto = getDriver().findElement(by).getText();
+		}catch(Exception e){
+			
+		}
+		return texto;
 	}
 
 	public void clickFormulario(By by) {

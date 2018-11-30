@@ -28,6 +28,7 @@ public class AbasTest extends BaseTest {
 		Assert.assertTrue(abas.isAba2());
 		abas.gerarScreenshot("verificaAba2");
 		System.out.print("teste de git");
+		
 	}
 
 }
