@@ -14,6 +14,7 @@ public class AbasTest extends BaseTest {
 	@Test
 	public void deveInABA1teragirComAbas(){
 		//acessar menu abas
+		statusReport("Interação com Abas");
 		esperaPresence(By.className("android.widget.TextView"));
 		menu.acessarAbas();
 		abas.gerarScreenshot("clickAbas");

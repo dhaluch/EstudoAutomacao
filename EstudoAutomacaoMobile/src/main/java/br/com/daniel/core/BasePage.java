@@ -10,6 +10,7 @@ import org.openqa.selenium.WebDriver.Timeouts;
 
 import io.appium.java_client.MobileElement;
 
+
 public class BasePage {
 	// private DSL dsl = new DSL();
 	// Set

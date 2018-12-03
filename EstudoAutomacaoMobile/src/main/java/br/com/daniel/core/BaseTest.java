@@ -25,6 +25,7 @@ public class BaseTest {
 	public static void statusReport(String name){
 		report = new ExtentReports(System.getProperty("user.dir")+"\\ExtetnReportResults.html");
 		test = report.startTest(name);
+		
 	}
 	
 	
